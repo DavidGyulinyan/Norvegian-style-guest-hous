@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 a {
@@ -29,6 +29,9 @@ a {
 
     position: relative;
 }
+
+
+/* PC version menu */
 
 .menu {
     width: 20%;
