@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 
 a {
@@ -539,7 +540,7 @@ a {
 }
 
 
-/* callin section with title 'Come together' */
+/* calling section with title 'Come together' */
 
 .callingSec {
     height: 266px;
@@ -548,7 +549,6 @@ a {
 
 .part {
     width: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,12 +581,11 @@ a {
 
 .partSection {
     width: 100%;
+    margin-top: 20px;
     display: flex;
 }
 
 .icon {
-    width: 20%;
-    height: 50px;
 
     display: flex;
     justify-content: center;
@@ -595,7 +594,7 @@ a {
 
 .txt {
     width: 80%;
-    height: 50px;
+    margin-left: 20px;
     font-size: 13px;
 
     display: flex;

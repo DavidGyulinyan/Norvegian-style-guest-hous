@@ -31,6 +31,15 @@
     .iconsPart {
         display: block;
     }
+
+    .partSection {
+        margin-top: 20px;
+    }
+
+
+    .txt {
+        margin-left: 20px;
+    }
 }
 
 @media (min-width:768px) and (max-width:992px){
@@ -54,6 +63,18 @@
     .title h1 {
         width: 60%;
         font-size: 45px;
+    }
+
+    .partCase {
+        width: 60%;
+    }
+
+    .partSection {
+        margin-top: 20px;
+    }
+
+    .txt {
+        margin-left: 20px;
     }
 }
 
@@ -102,6 +123,30 @@
     
     .secondReveiwCase {
         height: 110px;
+    }
+
+    .callingSec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        width: 80%;
+    }
+
+    .partCase {
+        width: 60%;
+    }
+
+    .partSection {
+        margin-top: 20px;
+    }
+
+    .txt {
+        margin-left: 20px;
     }
 
 }
@@ -230,6 +275,30 @@
 
     .secondSpaceCase {
         display: none;
+    }
+
+    .callingSec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        width: 80%;
+    }
+
+    .partCase {
+        width: 60%;
+    }
+
+    .partSection {
+        margin-top: 20px;
+    }
+
+    .txt {
+        margin-left: 20px;
     }
 
 }
