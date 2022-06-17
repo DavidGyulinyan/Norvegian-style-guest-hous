@@ -1,0 +1,235 @@
+@media (min-width:1200px) {
+ 
+ 
+  .menu-box {
+     display: none;
+ }
+  
+ .mobileMenu {
+     display: none;
+ }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+
+    .menu-box {
+        display: none;
+    }
+     
+    .mobileMenu {
+        display: none;
+    }
+
+    .logoOnImage {
+        margin-top: 90px;
+    }
+
+    .title h1 {
+        width: 40%;
+    }
+
+    .iconsPart {
+        display: block;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+    .menu{
+        width: 25%;
+    }
+
+    .menu-box {
+        display: none;
+    }
+     
+    .mobileMenu {
+        display: none;
+    }
+
+    .logoOnImage {
+        margin-top: 30px;
+    }
+
+    .title h1 {
+        width: 60%;
+        font-size: 45px;
+    }
+}
+
+@media (min-width:600px) and (max-width:768px){
+
+    .menu {
+        display: none;
+    }
+
+    .buttonInHeader {
+        display: none;
+    }
+
+    .itemsOnImage p {
+        font-size: 38px;
+    }
+
+    .logoOnImage {
+        margin-top: -25px;
+    }
+
+    .textPart {
+        width: 40%;
+    }
+
+    .title h1 {
+        width: 80%;
+        font-size: 45px;
+    }
+
+    .reveiw {
+        width: 500px;
+    }
+
+    .secondReveiw {
+        height: 180px;
+    }
+    
+    .thirdReveiw {
+        height: 160px;
+    }
+    
+    .thirdReveiwCase {
+        height: 130px;
+    }
+    
+    .secondReveiwCase {
+        height: 110px;
+    }
+
+}
+
+@media (min-width:360px) and (max-width:600px){
+    .menu {
+        display: none;
+    }
+
+    .buttonInHeader {
+        display: none;
+    }
+
+    .itemsOnImage p {
+        font-size: 28px;
+    }
+
+    .logoOnImage {
+        margin-top: -25px;
+    }
+
+    .sectionOfDescription {
+        display: block;
+    }
+
+    .textPart {
+        width: 80%;
+        height: 180px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .buttonClover {
+        margin: 20px;
+        justify-content: center;
+    } 
+
+    .title h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .itemsOfArrangements {
+        display: block;
+    }
+
+    .itemsIconSubtitle {
+        width: 50%;
+        margin: auto;
+    }
+
+    .subTitle p {
+        width: 90%;
+    }
+
+    .itemsIconSubtitle p {
+        margin-top: 20px;
+    }
+
+    .img {
+        margin-top: 20px;
+    }
+
+    .orangeLineLeftSide {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfectEscapeTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfectEscapeSubtitle {
+        width: 65%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .combinedShape {
+        margin-top: 0;
+        display: block;
+    }
+
+    .shapeContent {
+        height: 80px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .shapeTxt {
+        margin-left: 10px;
+    }
+
+    .reveiw {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .secondReveiw {
+        height: 180px;
+    }
+    
+    .thirdReveiw {
+        height: 160px;
+    }
+    
+    .thirdReveiwCase {
+        height: 130px;
+    }
+    
+    .secondReveiwCase {
+        height: 110px;
+    }
+
+    .sliderButtonSection {
+        justify-content: center;
+    }
+
+    .slideButtonCase {
+        width: 30%;
+    }
+
+    .secondSpaceCase {
+        display: none;
+    }
+
+}

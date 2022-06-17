@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+}
+
+.headerContent {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #52503B;
+
+    position: relative;
+}
+
+.menu {
+    width: 20%;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuItem {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuItem:hover {
+    color: #8d8c82;
+    transition: .3s;
+}
+
+.buttonInHeader {
+    width: 117px;
+    height: 42px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 6px;
+    border: none;
+}
+
+.buttonInHeader:hover {
+    background-color: #8d8c82;
+}
+
+
+/* mobile version menu, burger button */
+
+.menu-box {
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+
+    position: absolute;
+    top: 15px;
+    right: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: .5s;
+    opacity: .25s;
+}
+
+.burger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .line:nth-child(2) {
+    display: none;
+}
+
+.burger.active .line:nth-child(3) {
+    transform: translate(0) rotate(-45deg);
+}
+
+
+/* mobile version menu */
+
+.mobileMenu {
+    width: 100%;
+    height: 0;
+    background-color: #dfdccf;
+    overflow: hidden;
+
+    position: absolute;
+    right: 0;
+    top: 80px;
+    transition: .3s;
+}
+
+.activeMenu {
+    height: 700px;
+}
+
+.mobileMenuItem {
+    height: 50px;
+    margin-top: 1px;
+    color: #52503B;
+    background-color: #797762;
+    transition: .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenuItem:hover {
+    background-color: #8d8c82;
+    transition: .3s;
+}
+
+.buttonInmobileMenu {
+    width: 117px;
+    height: 42px;
+
+    border-radius: 6px;
+    border: none;
+    background-color: #fff;
+
+    cursor: pointer;
+    transition: .3s;
+
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.buttonInmobileMenu:hover {
+    background-color: #8d8c82;
+}
+
+
+/*  section under header, with fixed image of guest house */
+
+.imageOfGuestHous {
+    background-image: url(../image/IMAGE.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.itemsOnImage {
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoPosition {
+    height: 200px;
+}
+
+.logoOnImage {
+    width: 200px;
+    height: 75px;
+    margin-top: 120px;
+}
+
+.itemsOnImage p {
+    width: 70%;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.itemsOnImage span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* mous icon's line */
+
+.iconOnImage {
+    position: relative;
+}
+
+.iconLine {
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+
+
+/* orange color line before section with description */
+
+.orangeLine {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* section with description */
+
+.sectionOfDescription {
+    height: 410px;
+    background-color: #FAF8F0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textPart {
+    width: 30%;
+}
+
+.buttonClover {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttonDescription {
+    width: 117px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    background-color: #52503B;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttonDescription:hover {
+    background-color: #fff;
+}
+
+
+/* title section */
+
+.sectionOfTitle {
+    height: 568px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    width: 40%;
+    font-size: 50px;
+    text-align: center;
+    color: #52503B;
+}
+
+.line-2 {
+    margin-top: 100px;
+}
+
+
+/* kitchen image section */
+
+.kitchenImage {
+    width: 100%;
+    height: 800px;
+    background-image: url(../image/KITCHEN.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Sleeping arrangements section */
+
+.sectionOfArrangements {
+    background-color: #FAF8F0;
+}
+
+.title-1 {
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitle {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitle p {
+    width: 30%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.itemsOfArrangements {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemsIconSubtitle {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.itemsIconSubtitle p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img {
+    width: 57px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*  The perfect escape section  */
+
+.perfectEscape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangle {
+    width: 1100px;
+    padding: 10px;
+}
+
+.orangeLineLeftSide {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.perfectEscapeTitle {
+    font-size: 32px;
+}
+
+.perfectEscapeSubtitle {
+    width: 40%;
+}
+
+
+/* Combined shape section, with icons and text */
+
+.cominedShapeClover {
+    margin-top: 60px;
+}
+
+.combinedShape {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.shapeContent {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.shapeIcon {
+    width: 14%;
+    height: 40px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shapeTxt {
+    font-size: 14px;
+}
+
+
+/* reveiws section */
+
+.slidReveiw {
+    background-color: #FAF8F0;
+}
+
+.line-3 {
+    height: 100px;
+}
+
+
+/* reveiws slider */
+
+.reveiwSec {
+    height: 490px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.reveiwCase {
+    width: 95%;
+    height: 246px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.reveiw {
+    width: 584px;
+    height: 266px;
+    padding: 10px 20px;
+
+    margin-left: 30px;
+    background-color: #FEFEFE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveiwRectangle {
+    width: 500px;
+    height: 200px;
+}
+
+.reviewerTxtSubtitle {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.reveiwerName {
+    margin-top: 10px;
+    display: flex;
+}
+
+.reveiwerName p {
+    margin-left: 10px;
+}
+
+
+/* slider buttons */
+
+.sliderButtonSection {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slideButtonCase {
+    width: 150px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slideButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:  1px solid black;
+    cursor: pointer;
+}
+
+.secondReveiw {
+    height: 220px;
+}
+
+.thirdReveiw {
+    height: 200px;
+}
+
+.thirdReveiwCase {
+    height: 170px;
+}
+
+.secondReveiwCase {
+    height: 150px;
+}
+
+.interierImage {
+    height: 660px;
+
+    background-image: url(../image/INTERIER.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* callin section with title 'Come together' */
+
+.callingSec {
+    height: 266px;
+    display: flex;
+}
+
+.part {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtPart {
+    width: 80%;
+}
+
+.title2 {
+    width: 100%;
+    font-size: 32px;
+}
+
+.subtitle {
+    width: 80%;
+}
+
+
+/* part with icons */
+
+.secondPart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.partCase {
+    width: 48%;
+}
+
+.partSection {
+    width: 100%;
+    display: flex;
+}
+
+.icon {
+    width: 20%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    width: 80%;
+    height: 50px;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Booking section */
+
+.bookingSec {
+    height: 478px;
+}
+
+.emptySpace {
+    width: 100%;
+}
