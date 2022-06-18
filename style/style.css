@@ -606,9 +606,188 @@ a {
 /* Booking section */
 
 .bookingSec {
-    height: 478px;
+    background-color: #FFFFFF;
 }
 
 .emptySpace {
     width: 100%;
+}
+
+.bookingSectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleTxt {
+    width: 50%;
+    font-size: 32px;
+    color: #52503B;
+    text-align: center;
+}
+
+.bookingSectionSubtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitleTxt {
+    width: 40%;
+    height: 70px;
+    color: #52503B;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSec {
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSecItem {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWrapper {
+    width: 10%;
+}
+
+.btn {
+    width: 117px;
+    height: 42px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 6px;
+    border: none;
+}
+
+.button1 {
+    border: 4px solid #52503B;
+}
+
+.button1:hover {
+    background-color: #52503B;
+    color: white;
+}
+
+.button2 {
+    border: 4px solid #52503B;
+    background-color: #52503B;
+    color: white;
+}
+
+.button2:hover {
+    border: 4px solid #52503B;
+    background-color: #fff;
+    color: black;
+}
+
+.footer {
+    height: 608px;
+    background-color: #52503B;
+}
+
+.footerWrapper {
+    height: 350px;
+    display: flex;
+}
+
+.footerSection {
+    height: 350px;
+}
+
+.firstSec {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSec {
+    width: 80%;
+    display: flex;
+}
+
+.menuInFooterItem {
+    height: 30px;
+    color: white;
+}
+
+.secondSecWrapper {
+    width: 50%;
+    height: 70px;
+}
+
+.socialMediaTitle {
+    height: 50px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.space {
+    width: 20%;
+}
+
+.desc {
+    margin-top: 58px;
+    height: 160px;
+    color: white;
+}
+
+.desc div {
+    margin-top: 19px;
+}
+
+.excerpt {
+    font-size: 13px;
+    width: 80%;
+}
+
+.input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+.inputRightButton {
+    width: 17%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.inputRightButton:hover {
+    background-color: #797762;
+    cursor: pointer;
+}
+
+.footerInfoSizes {
+    height: 50px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
