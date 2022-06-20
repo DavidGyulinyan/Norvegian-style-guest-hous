@@ -40,6 +40,10 @@
     .txt {
         margin-left: 20px;
     }
+
+    .buttonWrapper {
+        width: 20%;
+    }
 }
 
 @media (min-width:768px) and (max-width:992px){
@@ -75,6 +79,10 @@
 
     .txt {
         margin-left: 20px;
+    }
+
+    .buttonWrapper {
+        width: 25%;
     }
 }
 
@@ -149,7 +157,42 @@
         margin-left: 20px;
     }
 
+    .buttonSec {
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .menuInFooterItem {
+        height: 35px;
+        text-align: center;
+    }
+
+    .space {
+        width: 0;
+    }
+
+    .footerWrapper {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSec {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSecWrapper {
+        width: 80%;
+    }
+
+    .shapeTxtClover {
+        padding-left: 10px;
+    }
+
 }
+
 
 @media (min-width:360px) and (max-width:600px){
     .menu {
@@ -302,4 +345,58 @@
         margin-left: 20px;
     }
 
+    .bookingSectionTitle {
+        width: 100%;
+    }
+
+    .titleTxt {
+        width: 88%;
+    }
+
+    .subtitleTxt {
+        width: 60%;
+    }
+
+    .buttonSec {
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .space {
+        width: 0;
+    }
+
+    .menuInFooterItem {
+        height: 35px;
+        text-align: center;
+    }
+
+    .footerWrapper {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSec {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSecWrapper {
+        width: 100%;
+    }
+
+    .input {
+        width: 65%;
+    }
+    
+    .inputRightButton {
+        width: 23%;
+    }
+
+    .rights {
+        height: 100px;
+        text-align: center;
+    }
 }

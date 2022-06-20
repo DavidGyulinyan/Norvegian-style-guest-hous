@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /* border: 1px solid red; */
 }
 
 a {
@@ -280,6 +279,10 @@ a {
 }
 
 .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #52503B;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,7 +546,6 @@ a {
 /* calling section with title 'Come together' */
 
 .callingSec {
-    height: 266px;
     display: flex;
 }
 
@@ -605,14 +607,6 @@ a {
 
 /* Booking section */
 
-.bookingSec {
-    background-color: #FFFFFF;
-}
-
-.emptySpace {
-    width: 100%;
-}
-
 .bookingSectionTitle {
     display: flex;
     justify-content: center;
@@ -634,7 +628,7 @@ a {
 
 .subtitleTxt {
     width: 40%;
-    height: 70px;
+    height: 90px;
     color: #52503B;
     text-align: center;
 
@@ -644,22 +638,23 @@ a {
 }
 
 .buttonSec {
-    height: 70px;
+    height: 150px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .buttonSecItem {
-    width: 25%;
+    width: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .buttonWrapper {
-    width: 10%;
+    width: 20%;
 }
 
 .btn {
@@ -692,22 +687,19 @@ a {
     color: black;
 }
 
+/* footer section */
+
 .footer {
-    height: 608px;
     background-color: #52503B;
 }
 
 .footerWrapper {
-    height: 350px;
     display: flex;
-}
-
-.footerSection {
-    height: 350px;
 }
 
 .firstSec {
     width: 20%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -719,13 +711,11 @@ a {
 }
 
 .menuInFooterItem {
-    height: 30px;
     color: white;
 }
 
 .secondSecWrapper {
     width: 50%;
-    height: 70px;
 }
 
 .socialMediaTitle {
@@ -749,7 +739,6 @@ a {
 
 .desc {
     margin-top: 58px;
-    height: 160px;
     color: white;
 }
 
@@ -767,6 +756,7 @@ a {
     height: 40px;
     border: none;
     border-radius: 6px;
+    padding-left: 20px;
 }
 
 .inputRightButton {
