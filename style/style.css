@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 
 a {
@@ -184,7 +185,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
 }
+
+
+/* actvate items when page is loading */
+.itemsOnImageIsActive {
+    opacity: 1;
+    margin-top: -30px;
+    transition: 1s ease-in-out;
+}
+
+/*  */
 
 .logoPosition {
     height: 200px;
@@ -197,6 +210,7 @@ a {
 }
 
 .itemsOnImage p {
+    margin-top: 60px;
     width: 70%;
     color: #fff;
     font-size: 48px;
@@ -242,13 +256,29 @@ a {
     background-color: #FAF8F0;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .textPart {
     width: 30%;
+    opacity: 0;
 }
+
+._space {
+    width: 40%;
+}
+
+/* actvate pextPart when page is loading */
+.textPartIsActive {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+._spaceWidth {
+    width: 5%;
+}
+/*  */
 
 .buttonClover {
     margin-top: 10px;
@@ -513,7 +543,7 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border:  1px solid black;
+    border: 1px solid black;
     cursor: pointer;
 }
 
@@ -547,6 +577,7 @@ a {
 
 .callingSec {
     display: flex;
+    padding-top: 55px;
 }
 
 .part {
@@ -559,6 +590,7 @@ a {
 .txtPart {
     width: 80%;
 }
+
 
 .title2 {
     width: 100%;
