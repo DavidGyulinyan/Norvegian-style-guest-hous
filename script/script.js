@@ -27,24 +27,56 @@ document.addEventListener('DOMContentLoaded', () => {
 /*  */
 
 
- /* actvate textPart when page is scrolling */
+/* actvate textPart when page is scrolling */
 const isActive = document.querySelectorAll('.isActive');
 document.addEventListener('scroll', () => {
-    if(window.scrollY > 200) {
-    isActive.forEach(item => {
-        item.classList.add('textPartIsActive');
-    });
-}
-});
-/*  */
-
-    
- /* actvate space when page is scrolling more than 200 */
-const space = document.querySelector('._space');
-document.addEventListener('scroll', () => {
-    if(window.scrollY > 200) {
-    space.classList.add('_spaceWidth');
+    if (window.scrollY > 200) {
+        isActive.forEach(item => {
+            item.classList.add('textPartIsActive');
+        });
     }
 });
 /*  */
 
+
+/* actvate space when page is scrolling more than 200 */
+const space = document.querySelector('._space');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        space.classList.add('_spaceWidth');
+    }
+});
+/*  */
+
+/* activate title when scrolling*/
+const title = document.querySelector('.title');
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > 600) {
+        title.classList.add('titleIsActive');
+    }
+});
+/*  */
+
+/* reveiw section slider */
+const reveiw = document.querySelector('.reveiwCase');
+const buttonLeft = document.querySelector('.btnL');
+const buttonRight = document.querySelector('.btnR');
+
+let i = 0;
+buttonLeft.addEventListener('click', () => {
+    i+=0;
+    reveiw.scrollTo({
+        left: -i,
+        behavior: "smooth",
+    });
+});
+
+buttonRight.addEventListener('click', () => {
+    i+=300;
+    reveiw.scrollTo({
+        left: i,
+        behavior: "smooth",
+    });
+});
+/*  */

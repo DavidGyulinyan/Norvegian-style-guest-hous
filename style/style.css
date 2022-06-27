@@ -278,6 +278,7 @@ a {
 ._spaceWidth {
     width: 5%;
 }
+
 /*  */
 
 .buttonClover {
@@ -309,14 +310,28 @@ a {
 }
 
 .title {
+    height: 0;
+    overflow: hidden;
     font-size: 30px;
     font-weight: 700;
     color: #52503B;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
+
+/* activate title when scrolling*/
+.titleIsActive {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s ease-in-out
+}
+
+/*  */
 
 .title h1 {
     width: 40%;
@@ -477,18 +492,42 @@ a {
     align-items: center;
 }
 
+.wrapperReveiw {
+    display: flex;
+}
+
 .reveiwCase {
     width: 95%;
     height: 246px;
-    overflow: hidden;
+    overflow: auto;
 
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.reveiwCase::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  /* Track */
+  .reveiwCase::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .reveiwCase::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+
+.wrapperReveiw {
+    position: absolute;
 }
 
 .reveiw {
     width: 584px;
-    height: 266px;
+    height: 200px;
     padding: 10px 20px;
 
     margin-left: 30px;
@@ -516,6 +555,13 @@ a {
 
 .reveiwerName p {
     margin-left: 10px;
+}
+
+.stars {
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
 }
 
 
@@ -548,19 +594,12 @@ a {
 }
 
 .secondReveiw {
-    height: 220px;
-}
-
-.thirdReveiw {
     height: 200px;
 }
 
-.thirdReveiwCase {
-    height: 170px;
-}
 
-.secondReveiwCase {
-    height: 150px;
+.thirdReveiw {
+    height: 200px;
 }
 
 .interierImage {
@@ -744,6 +783,7 @@ a {
 
 .menuInFooterItem {
     color: white;
+    margin-top: 10px;
 }
 
 .secondSecWrapper {
